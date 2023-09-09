@@ -65,14 +65,14 @@ async def forward_cmd(bot, message):
     if k.empty:
         return await message.reply('This may be group and iam not a admin of the group.')
     if lock.locked():
-        return await message.reply_text('<b>Wait until previous process complete.</b>')
+        return await message.reply_text('<b>MAY BE YOU ARE ALREADY 🔴 START THE FORWARDING WAIT ⏳ COMPLETING THE PREVIEW 📤  THANK YOU ❤️ \n\nWait 💤 until previous process 🛰️ complete ♥️\n\n\n 🗽ANY NEED ♻️ HELP CONTACT 📞 ADMIN @KISHAN484 @Kishanaheer484.</b>')
     button = [[
         InlineKeyboardButton("YES", callback_data=f"forward#{source_chat_id}#{last_msg_id}")
     ],[
         InlineKeyboardButton("NO", callback_data="close")
     ]]
     await message.reply_text(
-        text="Do you want to start forwarding ?",
+        text="🗽 FOLDING STARTING PAGE 🛰️\n\n ♻️DO YOU WANT TO START 🔴 FORWARDING ?🔄 \n CLICK \n🤪YES\n 💣NO",
         reply_markup=InlineKeyboardMarkup(button)
     )
 
